@@ -1,0 +1,2 @@
+# trashmagicserver
+trash magic server
