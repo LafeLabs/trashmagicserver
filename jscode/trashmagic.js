@@ -5,6 +5,10 @@ function listfiles(domelement,folder){
         if (this.readyState == 4 && this.status == 200) {
             files = JSON.parse(this.responseText);
             var locallinks = [];
+            var oldlinks = domelement.getElementsByTagName("A");
+            for(var index = 0;index < oldlinks.length;index++){
+                locallinks.push(oldlinks[index]);
+            }
             for(var index = 0;index < files.length;index++){
                 var newa = document.createElement("A");
                 newa.href = folder + "/" + files[index];

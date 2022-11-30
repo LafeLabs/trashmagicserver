@@ -22,7 +22,9 @@ mkdir("iconsymbols");
 mkdir("maps");
 mkdir("symbolfeed");
 
-
+mkdir("media/zines");
+mkdir("media/books");
+mkdir("media/trashmagic");
 
 copy("https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/php/replicator.txt","replicator.php");
 

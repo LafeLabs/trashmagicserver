@@ -6,6 +6,7 @@
         "artist.html",
         "artist4x.html",
         "artistmobile.html",
+        "books.html",
         "controls.html",
         "dumbscroll.html",
         "font.html",
@@ -57,9 +58,11 @@
         "threejs.html",
         "threejsinvert.html",
         "traceicon.html",
+        "trashmagic.html",
         "trashrobot.html",
         "webdestroyer.html",
-        "webeditor.html"
+        "webeditor.html",
+        "zines.html"
     ],
     "data": [
         "alignimage.txt",
