@@ -32,6 +32,8 @@ Now to connect this pi to the outside world you want to forward port 80 traffic 
 
 Next, you want to buy a domain name linked to a physical location near where your server is, ending in something other than .com like .net, .org, .xyz or .art.  Edit the DNS entry for your domain to have an "A record" which points to your home IP address which you can get from [www.whatismyip.com](https://www.whatismyip.com/).  Contact other Trash Magic Operators with information on your server so they can link to it.
 
+When your server is live, put files for books in "/var/www/html/media/books", zines in "/var/www/html/media/zines", and images of trash magic objects to share on the network in "/var/www/html/media/trashmagic".  Write the domain on trash and place the trash in the physical route you will walk with your cart of physical media(which could just be a bike basket or backpack).  Photograph the trash magic media which points to the domain which points to the server and put those photographs in the trashmagic folder as described above. When you make your local rounds as a Server Operator in the neighborhood, take pictures of others' trash magic along and post to the trash magic feed.
+
 ### Replicate the Github using localhost
 
  - install PHP on your machine
