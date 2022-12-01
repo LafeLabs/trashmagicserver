@@ -39,12 +39,19 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <body>    
 <div id = "mainscroll">
     
-    <h1 id = "title">ZINES</h1>
+    <h1 id = "title">TRASH MAGIC SERVER</h1>
     
-    <p>Make a zine and either email a .pdf to the Operator or deliver the hardcopy to them out on the street when you see them. If you are an operator, put zines in the "zines" folder under /var/www/html/media/zines</p>
+    <p>Share books and zines, art, and trash, and make personal home pages. Email the operator to submit content or get help making your own server.</p>
 
-    <a href = "index.html">HOME</a>
-
+    <a href = "zines.html">ZINES</a>
+    <a href = "books.html">BOOKS</a>
+    <a href = "web/">WEB PAGES</a>
+    <a href = "trashmagic.html">TRASH MAGIC</a>
+    <a href = "trashrobot.html">TRASH ROBOT</a> 
+    <a href = "qrcode.html">QRCODE</a>
+    <a href = "mailto:operator@sloanslake.art">EMAIL THE OPERATOR</a>
+    <a href = "https://github.com/LafeLabs/trashmagicserver">REPLICATE SERVER</a>
+    
 </div>
 <script>
 
@@ -53,7 +60,8 @@ for(var index = 0;index < titles.length;index++){
     rainbowstring(titles[index]);    
 }
 
-listfiles(document.getElementById("mainscroll"),"media/zines");
+rainbow(document.getElementsByTagName("A"));
+
 
 </script>
 <style>
@@ -102,7 +110,6 @@ a{
     border-width:0.5em;
     color:black;
     margin-top:1em;
-    overflow:scroll;
 }
 img{
     display:block;
