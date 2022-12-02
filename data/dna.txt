@@ -35,6 +35,7 @@
         "mediadestroyer.html",
         "operator.html",
         "operator4x.html",
+        "operatorbigrobot.html",
         "picrust.html",
         "qrcode-page.html",
         "qrcode.html",
@@ -67,6 +68,7 @@
     "data": [
         "alignimage.txt",
         "arduinocodexyz.txt",
+        "arduinocodexyzbig.txt",
         "coin.txt",
         "controls.txt",
         "currentjson.txt",
