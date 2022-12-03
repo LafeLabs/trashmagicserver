@@ -36,20 +36,15 @@ When your server is live, put files for books in "/var/www/html/media/books", zi
 
 Create web pages for places, people and things on the route of the Operator.
 
+This is what the server home page looks like:
 
 ![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/server-screenshot.png)
 
+Here is the folder with the sub-folders you drag/drop media into on the Ubuntu Trash Magic Server:
+
 ![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/drop-folder-ubuntu-screenshot.png)
 
-
-![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/zines-screenshot.png)
-
-![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/books-screenshot.png)
-
-![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/webpages-screenshot.png)
-
-![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/trashmagic-screenshot.png)
-
+Put images in "trashmagic", zines in "zines" and books in "books".  Use a thumb drive to carry a copy of the whole set of files to clone from one Trash Magic Server to another when you are in physical proximity.  Carry around 2 thumb drives, one with the Ubuntu install drive described in the installation instructions at the Ubuntu page linked above and one with all your media.  Then anywhere you go you can create a new server and load media onto it, and if you find an existing server you can use your thumb drive to get all their files you want via sneakernet. 
 
 ![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/qrcode-screenshot.png)
 
@@ -73,7 +68,7 @@ Create web pages for places, people and things on the route of the Operator.
 
  - [tiktok:@trash_robot](https://www.tiktok.com/@trash_robot)
  - [instagram:@lafelabs](https://www.instagram.com/lafelabs/)
- - [mastodon:@lafelabs@mastodon.lol](https://mastodon.lol/@lafelabs)
+ - [mastodon:@trashrobot@kolektiva.social](https://kolektiva.social/@trashrobot)
  - [github:@lafelabs](https://github.com/LafeLabs/)
 
 # Trash Robot Books
