@@ -40,10 +40,16 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <div id = "mainscroll">
     
     <h1 id = "title">TRASH MAGIC SERVER</h1>
+
+<p>
+    The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
+</p>
+
+<p>This server is itself trash magic, just an old laptop that was being thrown out, revived with Linux and used as a web server.</p>
     
     <p>Share books and zines, art, and trash, and make personal home pages. Email the operator to submit content or get help making your own server.</p>
 
-    <a href = "zines.html">ZINES</a>
+    <a href = "rzines.html">ZINES</a>
     <a href = "books.html">BOOKS</a>
     <a href = "web/">WEB PAGES</a>
     <a href = "trashmagic.html">TRASH MAGIC</a>
@@ -55,10 +61,12 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 </div>
 <script>
 
+
 titles = document.getElementsByTagName("H1");
 for(var index = 0;index < titles.length;index++){
     rainbowstring(titles[index]);    
 }
+
 
 rainbow(document.getElementsByTagName("A"));
 
@@ -90,6 +98,7 @@ p{
     padding:1em 1em 1em 1em;
     font-size:1.5em;
     border:solid;
+    display:block;
     border-color:white;
     border-width:10px;
     border-radius:1em;
@@ -97,6 +106,8 @@ p{
     color:white;
     width:80%;
     margin:auto;
+    margin-top:1em;
+
 }
 a{
     text-align:center;

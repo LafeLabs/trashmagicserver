@@ -40,6 +40,8 @@
         "qrcode-page.html",
         "qrcode.html",
         "readme.html",
+        "rmedia.html",
+        "rzines.html",
         "scroll.html",
         "scrolldelete.html",
         "scrolleditor.html",
@@ -107,6 +109,7 @@
         "mkdir.txt",
         "pngsave.txt",
         "rdelete.txt",
+        "rdir.txt",
         "replicator.txt",
         "scroll.txt",
         "scrolleditor.txt",
@@ -171,6 +174,8 @@
         "home"
     ],
     "web": [
+        "board.html",
+        "board.txt",
         "index.html",
         "newpage.html"
     ],
