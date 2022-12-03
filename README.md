@@ -36,6 +36,23 @@ When your server is live, put files for books in "/var/www/html/media/books", zi
 
 Create web pages for places, people and things on the route of the Operator.
 
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/server-screenshot.png)
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/drop-folder-ubuntu-screenshot.png)
+
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/zines-screenshot.png)
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/books-screenshot.png)
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/webpages-screenshot.png)
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/trashmagic-screenshot.png)
+
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagicserver/main/media/trashmagic/qrcode-screenshot.png)
+
 ### Replicate the Github using localhost
 
  - install PHP on your machine
