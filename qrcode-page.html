@@ -22,6 +22,11 @@
     <tr>
         <td>URL:</td>
         <td><input id = "urlinput"/></td>
+        <td id = "reloadbutton" class=  "button">LOADPAGE</td>
+    </tr>
+    <tr>
+        <td>TEXT:</td>
+        <td><input id = "textinput"/></td>
     </tr>
 </table>
 <a id = "linklink"></a>
@@ -35,16 +40,53 @@ fontsize = 12;
 
 //globalurl = "http://www.trashrobot.org/qrcode.html";
 globalurl = window.location.href.split("qrcode.html")[0];
-
+urltext = globalurl;
 
 document.getElementById("urlinput").value = "";
+document.getElementById("textinput").value = "";
+
 
 document.getElementById("urlinput").select();
 
 table = document.getElementById("pagetable");
 
+
 document.getElementById("urlinput").onchange = function(){
-    globalurl= this.value;
+    loadtable();
+}
+document.getElementById("textinput").onchange = function(){
+    loadtable();
+}
+
+
+
+
+document.getElementById("linklink").href = globalurl;
+document.getElementById("linklink").innerHTML = globalurl;
+document.getElementById("urlinput").value = globalurl;
+document.getElementById("textinput").value = globalurl;
+
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+
+pngcode = document.getElementById("qrcode").getElementsByTagName("IMG")[0].src;
+qrcode.makeCode(globalurl);
+
+
+document.getElementById("reloadbutton").onclick  =function(){
+    loadtable();
+}
+
+function loadtable(){
+    globalurl = document.getElementById("urlinput").value;
+    urltext = document.getElementById("textinput").value;
     qrcode.makeCode(globalurl);
     pngcode = document.getElementById("qrcode").getElementsByTagName("IMG")[0].src;
     document.getElementById("linklink").href = globalurl;
@@ -61,26 +103,16 @@ document.getElementById("urlinput").onchange = function(){
             newimg.src = pngcode;
             newtd.appendChild(newimg);
         }
+        var newtr = document.createElement("TR");
+        table.appendChild(newtr);
+        for(var col = 0;col < 8;col++){
+            var newtd = document.createElement("TD");
+            newtr.appendChild(newtd);
+            newtd.innerHTML = urltext;
+            newtd.className = "urltext";
+        }
     }
-    
 }
-
-
-document.getElementById("linklink").href = globalurl;
-document.getElementById("linklink").innerHTML = globalurl;
-document.getElementById("urlinput").value = globalurl;
-
-qrcode = new QRCode(document.getElementById("qrcode"), {
-	text: globalurl,
-	width: codesquaresize,
-	height: codesquaresize,
-	colorDark : "#000000",
-	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
-});
-
-
-
 
 </script>
 <style>
@@ -97,6 +129,9 @@ canvas,img{
     right:0px;
     top:0px;
     font-size:2em;
+}
+.urltext{
+    font-size:8px;
 }
 .button{
     cursor:pointer;
