@@ -166,17 +166,10 @@ document.getElementById("newscrollinput").onchange = function(){
         if (this.readyState == 4 && this.status == 200) {
             filedata = this.responseText;
             if(filedata.length == 0){
-                scroll = prototypescroll;
-                if(currentFile.substring(currentFile.length-4,currentFile.length) == ".ino"){
-                    scroll = arduinoprototype;
-                }   
-                if(currentFile.substring(currentFile.length-5,currentFile.length) == ".html"){
-                    scroll = htmlprototype;
-                }   
-                
+                scroll = editor.getSession().getValue();
+        
                 setmode();
                 editor.setValue(scroll);  
-                
                 data = encodeURIComponent(scroll);
                 var httpc = new XMLHttpRequest();
                 var url = "filesaver.php";        

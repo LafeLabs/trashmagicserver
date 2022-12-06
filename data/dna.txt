@@ -177,7 +177,11 @@
         "board.html",
         "board.txt",
         "index.html",
-        "newpage.html"
+        "newpage.html",
+        "place.html",
+        "place.txt",
+        "places.html",
+        "underthebridge.html"
     ],
     "iconsymbols": [
         "abcfont.svg",
